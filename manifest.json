@@ -1,0 +1,38 @@
+{
+    "manifest_version": 2,
+    "name": "KeyCapSwapperEnHeb",
+    "version": "0.1",
+    "description": "The extension idea is to solve the problem that sometimes you are writing into a text input in English while you meant to write in Hebrew or vice versa (and it's quite frustrating to rewrite it in the intended format), so an extension that would take that input and convert it, for example, if I write akuo = 'שלום' (or 'יקךךם' = hello) then the extension will convert it to 'שלום' (and 'hello' respectively).",
+    "icons": {
+        "48": "images/keySwapper_icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "css": [
+                "bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css"
+            ],
+            "js": ["bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "background": {
+      "scripts": ["popup/popup.js"]
+    },
+    "permissions": [
+        "storage",
+        "downloads",
+        "activeTab"
+    ],
+    "browser_action": {
+        "default_icon": {
+            "38": "images/keySwapper_icon.png"
+        },
+        "default_title": "Swapper",
+        "default_popup": "popup/index.html",
+        "browser_style": true
+    }
+}

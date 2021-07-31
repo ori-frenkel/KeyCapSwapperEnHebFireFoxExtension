@@ -1,0 +1,60 @@
+.index-menu {
+    display: flex;
+	flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+    padding: 3px;
+    justify-content: space-between;
+	align-items: center;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 90%;
+    margin: 3px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    background-color: white;
+    border-color: #969696;
+    background-color: #1673ca;
+    color: white;
+}
+
+.menu-item:hover {
+    color: white;
+    background-color: #003e77;
+}
+
+
+.slider::-moz-range-thumb {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.slider {
+    cursor: default !important;
+}
+
+.swapper {
+    background-color: rgb(199, 0, 0);
+}
+
+.swapper:hover {
+    color: white;
+    background-color: rgb(155, 0, 0);
+}
+
+.back {
+    background-color: rgb(122, 122, 122);
+}
+
+.back:hover {
+    color: white;
+    background-color: rgb(85, 85, 85);
+}
+
+.index-title{
+	padding-top: 10px;
+}
